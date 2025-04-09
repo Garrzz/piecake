@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko PieeCake</title>
+    <link rel="icon" type="jpeg" href="img/logokue.jpg" />
+
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- My Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar"  data-aos="fade-down" data-aos-duration="800">
+      <a href="#" class="navbar-logo">Pieecakee</a></div>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+        <a href="index3.html">Laporan Keuangan</a>
+        <a href="index2.html">Transaksi</a>
+        <a href="index4.html">Daftra Pelanggan</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a  class="fa-solid fa-cart-shopping icon"  id="cartBtn"></i>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+</nav>
+<!-- Popup Cart -->
+<div class="popup-container" id="popup">
+  <div class="popup">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <h2>Pesanan Anda</h2>
+      <p>Tidak ada item dalam keranjang.</p>
+  </div>
+  </div>
+    <!-- Navbar End -->
+   
+    
+    <!-- Hero Section Start-->
+    <section class="hero" id="home">
+      <div data-aos="fade-left" data-aos-duration="800">
+      <main class="content">
+        <h1>Cicipi Cake Kami</h1>
+        <p>
+          Nikmati Kelembutan Dan Kelezatan Cake
+        </p>
+        <br>
+        <button class="beli-sekarang">Beli Sekarang</button>
+      </div>
+      </main>
+    </section>
+
+          <!-- Modal -->
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Pesan Sekarang</h2>
+              <p>Silakan isi data pesanan Anda.</p>
+          
+              <form id="order-form">
+                <!-- Pilih Produk -->
+                <label for="product">Pilih Cake:</label>
+                <select id="product" required>
+                  <option value="" disabled selected>Pilih kue favorit Anda</option>
+                  <option value="cheesecake">Cheesecake</option>
+                  <option value="chocolate-cake">Chocolate Cake</option>
+                  <option value="strawberry-pie">Strawberry Pie</option>
+                  <option value="baked-cake-korean">Baked Cake Korean</option>
+                  <option value="coklat-cake">Coklat Cake</option>
+                  <option value="cutest-cube">Cutest Cube</option>
+                
+                
+                
+                
+                
+                </select>
+                <!-- </form> -->
+          
+                <!-- Jumlah -->
+                <label for="quantity">Jumlah:</label>
+                <input type="number" id="quantity" min="1" value="1" required>
+                <!-- <br> -->
+                <!-- Nama -->
+                <label for="name">Nama:</label>
+                <input type="text" id="name" placeholder="Nama Anda" required>
+                <!-- Alamat -->
+                <label for="address">Alamat:</label>
+                <textarea id="address" placeholder="Alamat lengkap" required></textarea>
+          
+                <!-- Tombol Pesan -->
+                <button type="submit" id="confirm-btn">Pesan Sekarang</button>
+              </form>
+            </div>
+          </div>
+          
+          
+    
+    <!-- Hero Section End-->
+
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <div data-aos="zoom-in-up" data-aos-duration="800">
+        <div style="text-align: center;">
+      <h2><span>Tentang</span> Kami</h2></div></div>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/background.jpg" alt="Tentang Kami" /> <br>
+        </div>
+        <div class="content">
+          <div data-aos="zoom-in-right" data-aos-duration="800">
+          <h3>Kenapa memilih toko kami?</h3>
+          <br>
+          <h4>Di Toko PieeCake, kebersihan dan kehigienisan adalah prioritas utama kami. Kami menyediakan cake premium yang dibuat dari bahan-bahan berkualitas tinggi dan higienis, sehingga aman dan lezat untuk dikonsumsi oleh pelanggan kami.</h4>
+          <br>
+          <h4>Dalam toko ini kebersihan dan kehigenisan adalah nomor satu, menyediakan cake premium dengan menggunakan bahan yang higenis dan berkualitas yang siap di konsumsi konsumen</h4>
+          <br>
+          <h4>Menjamin kualitas terbaik dengan harga yang sangat terjangkau serta tersedia bervariasi cake khusus yang tidak dapat ditemukan di toko lain</h4>
+        </br>
+          <h4>Bukan hanya itu, Disini tersedia diskon besar bagi pelanggan tertentu ,Dan pelayan kami akan selalu mengutamakan layanan konsumen baik dalam segi pengiriman ataupun pemenerimaan produk kami hingga 100%.</h4>
+      </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+ <br>
+  <br>
+  <br>
+   <!-- Products Section start -->
+   <section class="products" id="products">
+    <center>
+        <h2 data-aos="fade-up" data-aos-duration="800"><span>Produk Unggulan</span> Kami</h2>
+    </center>
+    <br>
+    <br>
+    <br>
+    <center>
+        <h3 data-aos="fade-in" data-aos-duration="1000">
+            Kami memiliki beberapa produk unggulan yang bisa bersaing dengan toko-toko lain. Diantaranya:
+        </h3>
+    </center>
+
+    <div class="row">
+        <div class="product-card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="product-icons" data-aos="fade-up" data-aos-delay="200">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-image">
+                <img src="img/kue.jpg" alt="Product 1" />
+            </div>
+            <div class="product-content">
+                <h3>Baked Cake Korean</h3>
+                <div class="product-price">IDR 50K <span>IDR 63K</span></div>
+            </div>
+        </div>
+
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+            <div class="product-icons" data-aos="fade-up" data-aos-delay="300">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-image">
+                <img src="img/kue3.jpg" alt="Coklat Cake">
+            </div>
+            <div class="product-content">
+                <h3>Coklat Cake</h3>
+                <div class="product-price">IDR 45K <span>IDR 55K</span></div>
+            </div>
+        </div>
+
+        <div class="product-card" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+            <div class="product-icons" data-aos="fade-up" data-aos-delay="400">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-image">
+                <img src="img/kue8.jpg" alt="Product 1" />
+            </div>
+            <div class="product-content">
+                <h3>Cutest Cube</h3>
+                <div class="product-price">IDR 50K <span>IDR 60K</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Products Section end -->
+    <!-- Menu Section Start -->
+
+   
+    <section class="menu" id="menu">
+      <div data-aos="zoom-out" data-aos-duration="800">
+      <center><h2><span>Menu</span> Kami</h2></center>
+      <center><h3>Laper? Tenang, kami punya banyak pilihan menu enak yang siap bikin hari kamu makin seru!</h3><center>
+      </div>
+        <br>
+     <div class="menu-container">
+      <div class="menu-item" >
+        <div data-aos="fade-up" data-aos-delay="200">
+        <img src="img/Banana Cinnamon.jpg" alt="Banana Cinnamon" />
+        <h3>Cookies & Cream Cake</h3>
+        <p class="price">Rp 12.000</p>
+        <p class="status">✔ Tersedia</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div data-aos="fade-up" data-aos-delay="200">
+        <img src="img/Bolu Tape Pandan Keju.jpg" alt="Bolu Tape Pandan Keju" />
+        <h3>Bolu Coklat Kacang Mete</h3>
+        <p class="price">Rp 80.000</p>
+        <p class="status">✔ Tersedia</p>
+      </div>
+      </div>
+      <div class="menu-item">
+        <div data-aos="fade-up" data-aos-delay="200">
+        <img src="img/Marmer Cake Large.jpg" alt="Marmer Cake Large" />
+        <h3>Marmer Cake Large</h3>
+        <p class="price">Rp 285.000</p>
+        <p class="status pre-order">⏳ Pre Order</p>
+      </div>
+      </div>
+      <div class="menu-item">
+        <div data-aos="fade-up" data-aos-delay="200">
+        <img src="img/Chocolate Cake With Strawberry.jpg" alt="Banana Cake Small" />
+        <h3>Cheese Banana Cake Small</h3>
+        <p class="price">Rp 90.000</p>
+        <p class="status pre-order">⏳ Pre Order</p>
+      </div>
+      </div>
+      <div class="menu-item">
+        <div data-aos="fade-up" data-aos-delay="200">
+        <img src="img/Lapis Talas Keju.jpg" alt="Banana Cinnamon" />
+        <h3>Lapis Talas Keju</h3>
+        <p class="price">Rp 30.000</p>
+        <p class="status">✔ Tersedia</p>
+      </div>
+      </div>
+      <div class="menu-item">
+        <div data-aos="fade-up" data-aos-delay="200">
+        <img src="img/Blackforest Cake.jpg" alt="Bolu Tape Pandan Keju" />
+        <h3>Blackforest Cake</h3>
+        <p class="price">Rp 80.000</p>
+        <p class="status">✔ Tersedia</p>
+      </div>
+      </div>
+
+    </div>
+</section>
+    </div>
+
+
+  
+   <br>
+   <br>
+  
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2 data-aos="fade-up" data-aos-duration="800"><span>Kontak</span> Kami</h2>
+      <center>
+          <h3 data-aos="fade-up" data-aos-delay="200">
+              Hubungi kami bila Anda mempunyai keluhan atau saran terkait produk kami. Layanan aktif 24 jam.
+          </h3>
+      </center>
+      
+      <div class="row">
+          <iframe
+              data-aos="fade-right" data-aos-duration="1000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63339.17233959362!2d108.1976865!3d-7.3273435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e65835a0a1e1f7d%3A0x4d4d4d4d4d4d4d4d!2sPerumahan%20Pelangi%20Residence%2C%20Blok%20G%2016%2C%20Kersanagara%2C%20Cibeureum%2C%20Tasikmalaya%2C%20Jawa%20Barat%2046196!5e0!3m2!1sid!2sid!4v1616161616161!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="map"
+          ></iframe>
+  
+          <form action="" data-aos="fade-left" data-aos-duration="1000">
+              <div class="input-group" data-aos="fade-up" data-aos-delay="300">
+                  <i data-feather="user"></i>
+                  <input type="text" placeholder="Nama Lengkap" />
+              </div>
+              <div class="input-group" data-aos="fade-up" data-aos-delay="400">
+                  <i data-feather="mail"></i>
+                  <input type="email" placeholder="Email Aktif" />
+              </div>
+              <div class="input-group" data-aos="fade-up" data-aos-delay="500">
+                  <i data-feather="phone"></i>
+                  <input type="number" placeholder="Nomor Telepon" />
+              </div>
+              <button type="submit" class="btn" data-aos="zoom-in" data-aos-delay="600">Kirim Pesan</button>
+          </form>
+      </div>
+  </section>
+  
+    <!-- Contact Section End -->
+
+    <a href="https://wa.me/6281933404437"data-aos="fade-left" target="_blank" class="whatsapp-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wa-icon">
+      Chat Us
+    </a>
+    
+    
+    <!-- Footer Start -->
+      <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2><img src="img/manusia.png" alt="Logo" class="logo"> Toko PieeCake</h2>
+                <p>Toko PieeCake menyediakan berbagai macam pie dan cake dengan kualitas terbaik.</p>
+                <p><i class="fas fa-map-marker-alt"></i> Lokasi: Tasikmalaya, Jawa Barat</p>
+                <p><i class="fas fa-phone"></i> Telepon: 081933404437</p>
+                <p><i class="fas fa-envelope"></i> Email:tokopieecake@gmail.com</p>
+            </div>
+    
+            <div class="footer-middle">
+                <h3>Sosial Media Kami</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61574464707652&mibextid=rS40aB7S9Ucbxw6v">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/cicipi.cake?igsh=cjkxc2RnN2kwM3c=">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@toko.pieecake?_t=ZS-8uo8NGwm7Cm&_r=1">TikTok</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-right">
+                <h3>Pemesanan</h3>
+                <ul>
+                    <li><a href="#">Pesan ditempat</a></li>
+                    <li><a href="#">Order via WhatsApp</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+  
+
+    </body>
+    <!-- Footer End -->
+
+    <!-- My Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

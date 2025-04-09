@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Transaksi</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Transaksi Produk</h1>
+    </header>
+    
+    <main>
+        <form id="transaksiForm">
+            <label for="nama">Nama Produk:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" required>
+
+            <label for="harga">Harga Satuan:</label>
+            <input type="number" id="harga" name="harga" required>
+
+            <button type="button" onclick="hitungTotal()">Hitung Total</button>
+        </form>
+
+        <div id="hasil">
+            <h3>Total Harga:</h3>
+            <p id="totalHarga">Rp 0</p>
+        </div>
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+</html>
